@@ -1,0 +1,61 @@
+	section div .wrapper {
+		flex-flow: row wrap;
+	}
+
+	.center {
+		text-align: center;
+		padding-top: 3em;
+		font-size: $default-font-size * 2.5;
+		font-weight: normal;
+		margin: 0;	
+	}
+
+	.about-us-text {
+		padding: 0 15px;
+
+		& h1{
+			margin: 0;
+			font-weight: normal;
+			font-size: $default-font-size * 1.5;
+		}
+
+		& h1::first-letter {
+			font-size: $default-font-size * 3;
+		}
+
+		& h2 {
+			font-weight: normal;
+			font-size: $default-font-size * 1.5;
+		}
+
+	}
+
+	@media screen and (min-width: 320px) and (max-width:500px) {
+		.about-us-text h1::first-letter {
+			font-size: $default-font-size * 2.5;
+		}
+		.about-us-text {
+			padding: 0;
+		}
+	}
+
+	@media screen and (min-width: 600px) {
+
+		.about-us-text {
+			width: 50%;
+		}
+
+		.about-us-img {
+			background-image: url("../images/IT-solution.png");
+			height: 400px;
+			width: 50%;
+			background-repeat: no-repeat;
+			background-position: center right;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.about-us-text h2 {
+			font-size: 21px;
+		}
+	}
