@@ -6,6 +6,15 @@ body {
 	margin: 0;
 }
 
-section {
-	padding-top: $default-spacing * 2.5;
+.spacing {
+	padding-top: $default-spacing ;
+	
+	@media screen and (min-width: 768px) {
+		padding-top: $default-spacing * 2;
+	}
+
+	@media screen and (min-width: 1024px) {
+		padding-top: $default-spacing * 3;
+	}
+
 }
