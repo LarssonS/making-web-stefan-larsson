@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Making web</title>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDm-vQBC_7g_HRGBkLOOk4fkJqSa6UJgpc&callback=initMap"></script>
 	<script type="text/javascript" src="scripts/main.js" defer></script>
 </head>
 <body>
@@ -25,7 +27,7 @@
 				<a href="#">Home</a>
 				<a href="#about">About us </a>
 				<a href="#services">Services</a>
-				<a href="#">Contact</a>
+				<a href="#contact">Contact</a>
 			</div>
 		</div>
 	</nav>
@@ -68,7 +70,7 @@
 		</div>
 		
 		<section id="services" class="container spacing">
-			<article class="about-us-text test">'
+			<article class="about-us-text test">
 				<h1>Web design</h1>
 				<h2>
 					Web design We make solutions that are elegant, reasonable and search engine-friendly. Web design includes many different
@@ -77,10 +79,9 @@
 					design, search engine optimization and much more. Lets us help you make the website that your company needs.
 				</h2>
 				<div class="services-web-design"></div>
-				<button>TestTest</button>
 			</article>
 			
-			<article class="about-us-text test spacing">
+			<article class="about-us-text test spacing test-2">
 				<h1>App development</h1>
 				<h2>
 					"Mobile app development" is a term used to denote the act or process by which a mobile app is developed for mobile devices,
@@ -92,7 +93,7 @@
 				<div class="services-app-development"></div>
 			</article>
 			
-			<article class="about-us-text test spacing">
+			<article class="about-us-text test spacing test-2">
 				<h1>Search Engine Optimization</h1>
 				<h2>
 					Search Engine Optimization, (or SEO), helps you reach your target customers and offers a higher percentage of sales and
@@ -104,7 +105,7 @@
 				<div class="services-seo"></div>
 			</article>
 			
-			<article class="about-us-text test spacing">'
+			<article class="about-us-text test spacing test-2">
 				<h1>Ecommerce development</h1>
 				<h2>
 					Web development is the process of building, customizing, and extending websites by writing and coding programming languages
@@ -115,7 +116,80 @@
 			</article>
 		</section>
 		
+		<div class="container spacing">
+			<h1 class="center">Contact</h1>
+		</div>
+		
+		<section id="contact" class="container spacing grid">
+			<form class="column-half">
+				<div class="form-style">
+					<label for="name" class="required">Name</label>
+					<input type="text" id="name" required>
+				</div>
+				<div class="form-style">	
+					<label for="email" class="required">Email</label>
+					<input type="email" id="email" required>
+				</div>
+				<div class="form-style">
+					<label for="phoneNumber" class="required">Phone number</label>
+					<input type="tel" id="phoneNumber" required>
+				</div>
+				<div class="form-style">
+					<label for="message">Message</label>
+					<textarea  id="message" cols="30" rows="7"></textarea>
+				</div>
+				<button type="submit" class="btn">Submit</button>
+			</form>
+			<div class="column-half">
+				<div id="map" class="google-maps"></div>
+			</div>
+		</section>
 	</main>
-	
+	<footer class="footer">
+		<div class="container grid">
+			<div class="column-third">
+				<ul>
+					<li>
+						<h2>Making Web</h2>
+					</li>
+					<li>
+						<p><address>Bodalsvägen 20, 181 37 Lidingö</address></p>
+					</li>
+					<li>
+						<p><a href="tel:0735595497">073 559 54 97</a></p>
+					</li>
+					<li>
+						<p><a href="mailto:info@makingweb.com">info@makingweb.com</a></p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="column-third">
+				<ul>
+					<li>
+						<h2>Opening hours</h2>
+					</li>
+					<li>
+						<p>Mon-Fri 8-17</p>
+					</li>
+					<li>
+						<p>(Closed for lunch 12-13)</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="column-third">
+				<ul>
+					<li>
+						<h2>Follow us</h2>
+					</li>
+					<li>
+						<a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+						<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>		
+	</footer>
 </body>
 </html>

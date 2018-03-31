@@ -1,0 +1,27 @@
+.form-style {
+    margin-bottom: 15px;
+    
+    label,input,textarea {
+        display: block;
+        width: 100%;
+    }
+
+    input,textarea {
+        border: 1px solid #8d8d8d;
+        padding: 7px;
+    }
+}
+
+.google-maps {
+    height: 300px;
+    width: 100%;
+
+    @media screen and (min-width: 760px) {
+        height: 100%;
+    }
+}
+
+.required:after {
+    content: "*";
+    color: red;
+}
