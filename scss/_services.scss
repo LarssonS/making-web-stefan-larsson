@@ -3,6 +3,10 @@
     background-size: cover;
     background-position: center;
     height: 300px;
+
+    @media screen and (min-width: 1024px) {
+        height: 400px;
+    }
 }
 
 .services-app-development {
@@ -10,6 +14,10 @@
     background-size: cover;
     background-position: center;
     height: 300px;
+
+     @media screen and (min-width: 1024px) {
+        height: 400px;
+    }
 }
 
 .services-seo {
@@ -17,6 +25,10 @@
     background-size: cover;
     background-position: center;
     height: 300px;
+
+     @media screen and (min-width: 1024px) {
+        height: 400px;
+    }
 }
 
 .services-marketing {
@@ -24,12 +36,12 @@
     background-size: cover;
     background-position: center;
     height: 300px;
+
+     @media screen and (min-width: 1024px) {
+        height: 400px;
+    }
 }
 
-.test {
+.service-width {
     width: 100%;
-}
-
-.test-2 {
-    padding-top: $default-spacing;
 }

@@ -1,17 +1,18 @@
 .btn {
-    width: 33%;
-    padding: 8px 15px;
+	width: 33%;
+	padding: 8px 15px;
 	color: #212121;
-    background-color: #FFFFFF;
+	background-color: #FFFFFF;
 	border: 1px solid #8d8d8d;
 	text-decoration: none;
 	display: inline-block;
 	margin: 10px 0;
 	transition: all 0.2s ease-in-out;
 	text-align: center;
+	
+	&:hover {
+		background-color: #313131;
+		color: snow;
+	}
 }
 
-.btn:hover {
-	background-color: #313131;
-	color: snow;
-}

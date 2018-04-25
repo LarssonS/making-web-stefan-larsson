@@ -5,7 +5,7 @@
         display: block;
         width: 100%;
     }
-
+    
     input,textarea {
         border: 1px solid #8d8d8d;
         padding: 7px;
@@ -15,11 +15,17 @@
 .google-maps {
     height: 300px;
     width: 100%;
-
+    
     @media screen and (min-width: 760px) {
         height: 100%;
     }
 }
+
+.no-mediaqueries .google-maps {
+    height: 0px;
+    width: 0px;
+}
+
 
 .required:after {
     content: "*";
