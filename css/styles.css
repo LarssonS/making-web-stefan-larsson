@@ -269,20 +269,20 @@ section div .wrapper {
   font-weight: normal;
   margin: 0; }
 
-.about-us-text h1 {
+.about-us-text h2 {
   margin: 0;
   font-weight: normal;
   font-size: 24px; }
 
-.about-us-text h1::first-letter {
+.about-us-text h2::first-letter {
   font-size: 48px; }
 
-.about-us-text h2 {
+.about-us-text p {
   font-weight: normal;
   font-size: 19.2px; }
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
-  .about-us-text h1::first-letter {
+  .about-us-text h2::first-letter {
     font-size: 40px; } }
 
 .text-padding {
